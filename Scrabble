@@ -62,3 +62,26 @@ int compute_value(string word)
     }
     return sum;
 }
+
+/* // Official cs50 solution //
+
+int compute_value(string word)
+{
+    int score = 0; // Keep track of score
+    
+    for (int i = 0, len = strlen(word); i < len; i++) // Keep track of score
+    {
+        if (isupper(word[i]))
+        {
+            score +=POINTS[word[i] - 'A'];
+        }
+        else if (islower(word[i]))
+        {
+            score += POINTS[word[i] - 'a'];
+        }
+    }
+    
+    return score;
+}
+
+*/
