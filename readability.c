@@ -1,3 +1,6 @@
+// Four functions for each operation seems overly elaborate and unnecessary having seen others simply write everything in the main function.
+// The intention was to make each section of the programme accessible if required and to keep the main function as short as possible.
+
 #include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>
