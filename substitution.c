@@ -46,4 +46,26 @@ int main(int argc, string argv[])
             return 1;
         }
     } 
+    
+    string plain = get_string("Plaintext: ");
+    printf("Ciphertext: ");
+
+    int b = 0;
+    for (int a = 'a'; a <= 'z'; a++, b++) // Loop using ASCII
+    {
+        for (int k = 0, y = strlen(plain); k < y; k++) //Nested loop through string
+        {
+            //plain[k] = tolower(plain[k]); // If characters upper, makes lower
+
+            if (plain[k] == a) // Conditional to assign value to each character
+            {
+                char ciph = argv[1][b];
+                printf("%c", ciph);
+                // iterating through whole alphabet each time so impossible for character in plain not to == a
+                // issue with non lower case characters
+            }
+        }
+    }
+            printf("\n");
+
 }
